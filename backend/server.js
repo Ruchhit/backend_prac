@@ -43,7 +43,7 @@ server.get('/github',(req,res)=>{
     res.json(github)
 })
 
-server.get('/jokes',(req,res)=>{
+server.get('/api/jokes',(req,res)=>{
     const jokes = [
         {
             "id": 1,
