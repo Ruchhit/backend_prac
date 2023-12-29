@@ -43,6 +43,24 @@ server.get('/github',(req,res)=>{
     res.json(github)
 })
 
+server.get('/jokes',(req,res)=>{
+    const jokes = [
+        {
+            "id": 1,
+            "joke": "I am a cat"
+        },
+        {
+            "id": 2,
+            "joke": "I am a dog"
+        },
+        {
+            "id": 3,
+            "joke": "I am a bird"
+        }
+    ]
+    res.send(jokes)
+})
+
 server.listen(process.env.PORT,()=>{
     console.log(`server is listening at port = ${process.env.PORT}`)
 })
